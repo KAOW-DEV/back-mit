@@ -1,0 +1,117 @@
+{
+  "kind": "collectionType",
+  "collectionName": "received_lists",
+  "info": {
+    "name": "received_list",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "received": {
+      "model": "received"
+    },
+    "product_unit": {
+      "model": "product-unit"
+    },
+    "product_internal_code": {
+      "type": "string"
+    },
+    "product_barcode": {
+      "type": "string"
+    },
+    "product_name": {
+      "type": "string"
+    },
+    "unit": {
+      "type": "string"
+    },
+    "product_cost_vat": {
+      "type": "decimal",
+      "default": 0
+    },
+    "product_cost_no_vat": {
+      "type": "decimal",
+      "default": 0
+    },
+    "price": {
+      "type": "decimal",
+      "default": 0
+    },
+    "reduct_percen_1": {
+      "type": "decimal",
+      "default": 0
+    },
+    "reduct_percen_2": {
+      "type": "decimal",
+      "default": 0
+    },
+    "reduct_percen_3": {
+      "type": "decimal",
+      "default": 0
+    },
+    "reduct_percen_4": {
+      "type": "decimal",
+      "default": 0
+    },
+    "reduct_percen_5": {
+      "type": "decimal",
+      "default": 0
+    },
+    "reduct_price_1": {
+      "type": "decimal",
+      "default": 0
+    },
+    "reduct_price_2": {
+      "type": "decimal",
+      "default": 0
+    },
+    "reduct_price_3": {
+      "type": "decimal",
+      "default": 0
+    },
+    "reduct_price_4": {
+      "type": "decimal",
+      "default": 0
+    },
+    "reduct_price_5": {
+      "type": "decimal",
+      "default": 0
+    },
+    "reduct_percen_sum": {
+      "type": "decimal",
+      "default": 0
+    },
+    "reduct_price_sum": {
+      "type": "decimal",
+      "default": 0
+    },
+    "price_reduce": {
+      "type": "decimal",
+      "default": 0
+    },
+    "price_after_reduce": {
+      "type": "decimal",
+      "default": 0
+    },
+    "quantity": {
+      "type": "integer",
+      "default": 0
+    },
+    "price_sum": {
+      "type": "decimal",
+      "default": 0
+    },
+    "received_list_active": {
+      "type": "boolean",
+      "default": true
+    },
+    "product": {
+      "model": "product"
+    }
+  }
+}

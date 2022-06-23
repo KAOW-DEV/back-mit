@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "branches",
+  "info": {
+    "name": "branch",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "branch_name": {
+      "type": "string",
+      "unique": true
+    },
+    "branch_shop_name": {
+      "type": "string"
+    },
+    "branch_description": {
+      "type": "richtext"
+    },
+    "branch_phone": {
+      "type": "string"
+    }
+  }
+}

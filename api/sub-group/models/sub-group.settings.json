@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sub_groups",
+  "info": {
+    "name": "sub_group",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "sub_group_name": {
+      "type": "string",
+      "required": true,
+      "unique": false
+    },
+    "group": {
+      "model": "group"
+    },
+    "sub_group_code": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    }
+  }
+}

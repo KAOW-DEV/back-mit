@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "amphures",
+  "info": {
+    "name": "amphure"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "code": {
+      "type": "string"
+    },
+    "name_th": {
+      "type": "string"
+    },
+    "name_en": {
+      "type": "string"
+    },
+    "province": {
+      "model": "province"
+    }
+  }
+}

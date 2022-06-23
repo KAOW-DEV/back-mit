@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "districts",
+  "info": {
+    "name": "district"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "zip_code": {
+      "type": "integer"
+    },
+    "name_th": {
+      "type": "string"
+    },
+    "name_en": {
+      "type": "string"
+    },
+    "amphure": {
+      "model": "amphure"
+    }
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sells",
+  "info": {
+    "name": "sell",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "branch": {
+      "model": "branch"
+    },
+    "code": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "date": {
+      "type": "date",
+      "required": true
+    },
+    "credit_term": {
+      "type": "integer",
+      "default": 0
+    },
+    "date_due": {
+      "type": "date"
+    },
+    "users_permissions_user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "customer": {
+      "model": "customer"
+    },
+    "customer_name": {
+      "type": "string"
+    },
+    "customer_address": {
+      "type": "richtext"
+    },
+    "customer_phone": {
+      "type": "string"
+    },
+    "customer_fax": {
+      "type": "string"
+    },
+    "customer_description": {
+      "type": "richtext"
+    },
+    "customer_code": {
+      "type": "string"
+    },
+    "customer_price_level": {
+      "type": "string"
+    },
+    "vat_type": {
+      "type": "boolean"
+    },
+    "reduce_money": {
+      "type": "decimal",
+      "default": 0
+    },
+    "price_sum": {
+      "type": "decimal",
+      "default": 0
+    },
+    "price_vat": {
+      "type": "decimal",
+      "default": 0
+    },
+    "price_net": {
+      "type": "decimal",
+      "default": 0
+    }
+  }
+}

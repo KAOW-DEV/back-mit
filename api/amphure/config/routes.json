@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/amphures",
+      "handler": "amphure.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/amphures/count",
+      "handler": "amphure.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/amphures/:id",
+      "handler": "amphure.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/amphures",
+      "handler": "amphure.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/amphures/:id",
+      "handler": "amphure.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/amphures/:id",
+      "handler": "amphure.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "customer_types",
+  "info": {
+    "name": "customer_type"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "comment": {
+      "type": "richtext"
+    }
+  }
+}

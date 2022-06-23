@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "geographies",
+  "info": {
+    "name": "geography"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "kind": "collectionType",
+  "collectionName": "receiveds",
+  "info": {
+    "name": "received",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "supplier": {
+      "model": "supplier"
+    },
+    "branch": {
+      "model": "branch"
+    },
+    "supplier_name": {
+      "type": "string"
+    },
+    "supplier_address": {
+      "type": "richtext"
+    },
+    "supplier_phone": {
+      "type": "string"
+    },
+    "supplier_description": {
+      "type": "richtext"
+    },
+    "type_vat": {
+      "type": "boolean"
+    },
+    "received_number": {
+      "type": "string",
+      "required": false,
+      "unique": true
+    },
+    "received_date": {
+      "type": "date"
+    },
+    "delivery_number": {
+      "type": "string"
+    },
+    "delivery_date": {
+      "type": "date"
+    },
+    "po_number": {
+      "type": "string"
+    },
+    "received_credit_term": {
+      "type": "integer",
+      "default": 0
+    },
+    "users_permissions_user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "quantity_total": {
+      "type": "integer",
+      "default": 0
+    },
+    "reduce_percen_1": {
+      "type": "decimal",
+      "default": 0
+    },
+    "reduce_percen_2": {
+      "type": "decimal",
+      "default": 0
+    },
+    "reduce_percen_3": {
+      "type": "decimal",
+      "default": 0
+    },
+    "reduce_percen_4": {
+      "type": "decimal",
+      "default": 0
+    },
+    "reduce_percen_5": {
+      "type": "decimal",
+      "default": 0
+    },
+    "reduce_money": {
+      "type": "decimal",
+      "default": 0
+    },
+    "reduce_percen_sum": {
+      "type": "decimal",
+      "default": 0
+    },
+    "price_sum_no_vat": {
+      "type": "decimal",
+      "default": 0
+    },
+    "price_vat": {
+      "type": "decimal",
+      "default": 0
+    },
+    "price_sum_net": {
+      "type": "decimal",
+      "default": 0
+    },
+    "received_active": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

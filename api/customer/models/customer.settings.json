@@ -1,0 +1,101 @@
+{
+  "kind": "collectionType",
+  "collectionName": "customers",
+  "info": {
+    "name": "customer",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "code": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "account": {
+      "type": "string"
+    },
+    "prefix": {
+      "model": "prefix"
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "address_1": {
+      "type": "richtext"
+    },
+    "address_2": {
+      "type": "richtext"
+    },
+    "phone": {
+      "type": "richtext"
+    },
+    "fax": {
+      "type": "richtext"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "home_page": {
+      "type": "richtext"
+    },
+    "customer_type": {
+      "model": "customer-type"
+    },
+    "tax": {
+      "type": "string"
+    },
+    "price_level": {
+      "type": "string",
+      "required": true
+    },
+    "branch_type": {
+      "type": "string",
+      "required": true
+    },
+    "branch_number": {
+      "type": "string"
+    },
+    "order_limit": {
+      "type": "decimal",
+      "default": 0
+    },
+    "over_due": {
+      "type": "decimal",
+      "default": 0
+    },
+    "credit_term": {
+      "type": "integer",
+      "default": 0
+    },
+    "note": {
+      "type": "richtext"
+    },
+    "province": {
+      "model": "province"
+    },
+    "amphure": {
+      "model": "amphure"
+    },
+    "district": {
+      "model": "district"
+    },
+    "zip_code": {
+      "type": "integer"
+    },
+    "suspend_sales": {
+      "type": "boolean",
+      "default": false
+    },
+    "actived": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

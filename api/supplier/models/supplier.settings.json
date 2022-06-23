@@ -1,0 +1,54 @@
+{
+  "kind": "collectionType",
+  "collectionName": "suppliers",
+  "info": {
+    "name": "supplier",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "supplier_name": {
+      "type": "string"
+    },
+    "supplier_address": {
+      "type": "richtext"
+    },
+    "supplier_phone": {
+      "type": "string"
+    },
+    "supplier_description": {
+      "type": "richtext"
+    },
+    "supplier_email": {
+      "type": "string"
+    },
+    "vendor_type": {
+      "model": "vendor-type"
+    },
+    "supplier_account_number": {
+      "type": "string"
+    },
+    "supplier_tax": {
+      "type": "string"
+    },
+    "supplier_branch_number": {
+      "type": "integer"
+    },
+    "supplier_credit": {
+      "type": "decimal",
+      "default": 0
+    },
+    "supplier_branch_status": {
+      "type": "string"
+    },
+    "supplier_actived": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

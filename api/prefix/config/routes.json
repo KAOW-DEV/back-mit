@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/prefixes",
+      "handler": "prefix.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/prefixes/count",
+      "handler": "prefix.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/prefixes/:id",
+      "handler": "prefix.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/prefixes",
+      "handler": "prefix.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/prefixes/:id",
+      "handler": "prefix.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/prefixes/:id",
+      "handler": "prefix.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

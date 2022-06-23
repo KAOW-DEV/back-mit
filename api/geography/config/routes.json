@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/geographies",
+      "handler": "geography.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/geographies/count",
+      "handler": "geography.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/geographies/:id",
+      "handler": "geography.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/geographies",
+      "handler": "geography.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/geographies/:id",
+      "handler": "geography.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/geographies/:id",
+      "handler": "geography.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

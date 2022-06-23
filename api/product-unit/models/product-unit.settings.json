@@ -1,0 +1,98 @@
+{
+  "kind": "collectionType",
+  "collectionName": "product_units",
+  "info": {
+    "name": "product_unit",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "product_unit_internal_code": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "product_unit_barcode": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "product_unit_name": {
+      "type": "string"
+    },
+    "product_unit_description": {
+      "type": "string"
+    },
+    "unit": {
+      "model": "unit"
+    },
+    "product_unit_quantity_number": {
+      "type": "integer",
+      "default": 0
+    },
+    "product": {
+      "model": "product"
+    },
+    "price_middle": {
+      "type": "decimal",
+      "default": 0
+    },
+    "percen_discount": {
+      "type": "decimal",
+      "default": 0
+    },
+    "percen_low_limit": {
+      "type": "decimal",
+      "default": 0
+    },
+    "price_1": {
+      "type": "decimal",
+      "default": 0
+    },
+    "price_2": {
+      "type": "decimal",
+      "default": 0
+    },
+    "price_3": {
+      "type": "decimal",
+      "default": 0
+    },
+    "price_4": {
+      "type": "decimal",
+      "default": 0
+    },
+    "price_5": {
+      "type": "decimal",
+      "default": 0
+    },
+    "price_6": {
+      "type": "decimal",
+      "default": 0
+    },
+    "price_7": {
+      "type": "decimal",
+      "default": 0
+    },
+    "price_8": {
+      "type": "decimal",
+      "default": 0
+    },
+    "price_9": {
+      "type": "decimal",
+      "default": 0
+    },
+    "price_10": {
+      "type": "decimal",
+      "default": 0
+    },
+    "product_unit_active": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

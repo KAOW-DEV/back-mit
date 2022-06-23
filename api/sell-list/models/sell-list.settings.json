@@ -1,0 +1,100 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sell_lists",
+  "info": {
+    "name": "sell_list",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "sell": {
+      "model": "sell"
+    },
+    "customer_price_level": {
+      "type": "string"
+    },
+    "product": {
+      "model": "product"
+    },
+    "product_unit": {
+      "model": "product-unit"
+    },
+    "product_internal_code": {
+      "type": "string"
+    },
+    "product_barcode": {
+      "type": "string"
+    },
+    "product_name": {
+      "type": "string"
+    },
+    "product_unit_name": {
+      "type": "string"
+    },
+    "quantity": {
+      "type": "integer",
+      "default": 0
+    },
+    "price": {
+      "type": "decimal",
+      "default": 0
+    },
+    "percen_reduce": {
+      "type": "decimal",
+      "default": 0
+    },
+    "percen_reduce_money": {
+      "type": "decimal",
+      "default": 0
+    },
+    "money_reduce": {
+      "type": "decimal",
+      "default": 0
+    },
+    "percen_plus": {
+      "type": "decimal",
+      "default": 0
+    },
+    "percen_plus_money": {
+      "type": "decimal",
+      "default": 0
+    },
+    "money_plus": {
+      "type": "decimal",
+      "default": 0
+    },
+    "price_net": {
+      "type": "decimal",
+      "default": 0
+    },
+    "price_sum": {
+      "type": "decimal",
+      "default": 0
+    },
+    "full_price": {
+      "type": "decimal",
+      "default": 0
+    },
+    "discount_percen": {
+      "type": "decimal",
+      "default": 0
+    },
+    "base_on": {
+      "type": "decimal",
+      "default": 0
+    },
+    "adjus_table": {
+      "type": "decimal",
+      "default": 0
+    },
+    "limit_accept": {
+      "type": "decimal",
+      "default": 0
+    }
+  }
+}

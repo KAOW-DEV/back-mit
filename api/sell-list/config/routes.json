@@ -1,0 +1,68 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/sell-lists",
+      "handler": "sell-list.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/sell-lists/count",
+      "handler": "sell-list.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/sell-lists/:id",
+      "handler": "sell-list.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/sell-lists",
+      "handler": "sell-list.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/sell-lists/:id",
+      "handler": "sell-list.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/sell-lists/:id",
+      "handler": "sell-list.delete",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/sell-lists/insertSellList",
+      "handler": "sell-list.insertSellList",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/sell-lists/updateSellList",
+      "handler": "sell-list.updateSellList",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
